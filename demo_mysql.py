@@ -1,10 +1,13 @@
 # Import Lib
 import mysql.connector
 
+# Connect to DB
 mydb = mysql.connector.connect(
-    host="127.0.0.1",
-    database="new_db_1",
-    user="root",
-    password="31012001Th"
+    host="127.0.0.1",       #host_port
+    user="root",            #user
+    password="31012001Th"   #pass
     )
-print(mydb)
+
+mycursor = mydb.cursor()
+
+mycursor.execute("CREATE DATABASE mydatabase")
