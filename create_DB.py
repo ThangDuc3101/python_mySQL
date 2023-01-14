@@ -10,7 +10,7 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 # Excute query
-mycursor.execute("CREATE DATABASE mydatabase")
+mycursor.execute("CREATE DATABASE mydatabase1")
 
 #Check databases in MySQL
 # mycursor.execute("SHOW DATABASES")
